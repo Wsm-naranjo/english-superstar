@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cards-container">
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=eLQMGYHVJ_I" target="_blank">
+                <img style="width: 100px;" src="https://english-superstar.my.canva.site/images/f1f56f06d43850e7b29b910681b28c5b.jpg" alt="" srcset="">
+                <h4>Daydreamin’</h4>
+            </a>            
+        </div>
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=kHLHSlExFis" target="_blank">
+                <img style="width: 100px;" src="https://english-superstar.my.canva.site/images/aeb738f07adf7f6bad8c26e78001e6ee.jpg" alt="" srcset="">
+                <h4>God is a woman</h4>
+            </a>        
+        </div>
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=iS1g8G_njx8" target="_blank">
+                <img style="width: 100px;" src="https://english-superstar.my.canva.site/images/2a848aa930f6a230e7eacd0b09190007.jpg" alt="" srcset="">
+                <h4>Problem</h4>
+            </a> 
+        </div>
+        <div>
+            <a href="../modos.html">Volver Menu</a>
+        </div>    
+    </div>
+</body>
+<style>
+  /* Resetear padding y margen para evitar desplazamiento no deseado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Evitar scroll */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url('../../src/6.png');
+}
+
+/* Contenedor centrado con flexbox */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+a{
+    text-decoration:none;
+}
+</style>
+</html>

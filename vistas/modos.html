@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cards-container">
+        <div class="card">
+            <a href="modos/karaoke/karaoke.html">
+                <h1>Karaoke</h1>
+            </a>            
+        </div>
+        <div class="card">
+            <a href="modos/oraciones/oraciones.html">
+                <h1>Completar ​oraciones</h1>
+            </a>        
+        </div>
+        <div class="card">
+            <a href="modos/escuchayescribe/escuchayescribe.html">
+                <h1>Escucha y escribe</h1>
+            </a> 
+        </div>    
+    </div>
+</body>
+<style>
+  /* Resetear padding y margen para evitar desplazamiento no deseado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Evitar scroll */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url('../src/fondo3.png');
+}
+
+/* Contenedor centrado con flexbox */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+a{
+    text-decoration:none;
+}
+</style>
+</html>
