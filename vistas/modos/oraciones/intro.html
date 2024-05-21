@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrucciones Oraciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="navigate-button" onclick="location.href='oraciones.html'">
+            <img style="width: 200px;"
+                src="https://english-superstar.my.canva.site/images/2594a574c24747476d7b689ed4f15e61.svg">
+        </button>
+    </div>
+</body>
+<style>
+    /* Resetear padding y margen para evitar desplazamiento no deseado */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Evitar scroll */
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        background-image: url('../../../src/intro.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* Contenedor centrado */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+        padding-bottom: 10%;
+        /* Ajuste para colocar el botón en la parte baja */
+    }
+
+    /* Estilos para el botón */
+    .navigate-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+</style>
+
+</html>
