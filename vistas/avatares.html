@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <button class="navigate-button" onclick="location.href='./vistas/avatares.html'">Ir a Otra Página</button>
-    </div>
-   <div class="container">
-        <button class="navigate-button" onclick="location.href='./vistas/avatares.html'">Ir a Otra Página</button>
-    </div>
-   <div class="container">
-        <button class="navigate-button" onclick="location.href='./vistas/avatares.html'">Ir a Otra Página</button>
+    <div class="cards-container">
+        <div class="card">
+            <img src="avatar1.jpg" alt="Avatar 1">
+            <h2>Avatar 1</h2>
+            <p>Descripción del avatar 1.</p>
+        </div>
+        <div class="card">
+            <img src="avatar2.jpg" alt="Avatar 2">
+            <h2>Avatar 2</h2>
+            <p>Descripción del avatar 2.</p>
+        </div>
+        <div class="card">
+            <img src="avatar3.jpg" alt="Avatar 3">
+            <h2>Avatar 3</h2>
+            <p>Descripción del avatar 3.</p>
+        </div>
     </div>
 </body>
 <style>
-/* Resetear padding y margen para evitar desplazamiento no deseado */
+    /* Resetear padding y margen para evitar desplazamiento no deseado */
 * {
     margin: 0;
     padding: 0;
@@ -31,32 +39,40 @@ html, body {
     height: 100%;
     overflow: hidden;
     font-family: Arial, sans-serif;
-    background-color:blue;
 }
 
-/* Contenedor centrado */
-.container {
+/* Contenedor centrado con flexbox */
+.cards-container {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     height: 100%;
-    padding-bottom: 20%; /* Ajuste para colocar el botón en la parte baja */
+    gap: 20px; /* Espacio entre las tarjetas */
 }
 
-/* Estilos para el botón */
-.navigate-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+/* Estilos para las tarjetas */
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navigate-button:hover {
-    background-color: #0056b3;
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
 }
 
 </style>
